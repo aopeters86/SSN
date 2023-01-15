@@ -41,15 +41,16 @@ public class ssnEmailName {
 	
 	public static void  fn(String first) {
 		 
-		String validFN = new String(first);
+		String validFN = new String(first);	
+		char FL = ' ';
 		
-		for(int i = 0; i < validFN.length(); i++) {
-			
+			for (int i = 0; i < validFN.length(); i++) {
+			FL = validFN.toUpperCase().charAt(0);	
 		}
-			
-		System.out.println(validFN + " is your first name, correct?");
-	
+			System.out.println(FL + validFN.substring(1, validFN.length())); 
+		
 	}
+	
 	
 	public static void ln(String last) {
 		
